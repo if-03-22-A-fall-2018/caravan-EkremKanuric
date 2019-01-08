@@ -10,34 +10,50 @@
  * <your description here>
  *-----------------------------------------------------------------------------
 */
-Caravan new_caravan()
-{
-}
+  #include "caravan.h"
+  struct Node{
+    Node* next;
 
-int get_length(Caravan caravan)
-{
-}
+  };
+  struct CaravanImplementation{
+    Node* head;
+  };
+  Caravan new_caravan()
+  {
+    return (Caravan)malloc(sizeof(struct CaravanImplementation));
+  }
 
-void delete_caravan(Caravan caravan)
-{
-}
+  int get_length(Caravan caravan)
+  {
 
-void add_pack_animal(Caravan caravan, PackAnimal animal)
-{
-}
+  }
 
-void remove_pack_animal(Caravan caravan, PackAnimal animal)
-{
-}
+  void delete_caravan(Caravan caravan)
+  {
+  }
 
-int get_caravan_load(Caravan caravan)
-{
-}
+  void add_pack_animal(Caravan caravan, PackAnimal animal)
+  {
+  }
 
-void unload(Caravan caravan)
-{
-}
+  void remove_pack_animal(Caravan caravan, PackAnimal animal)
+  {
+  }
 
-int get_caravan_speed(Caravan caravan)
-{
-}
+  int get_caravan_load(Caravan caravan)
+  {
+    return 0;
+  }
+
+  void unload(Caravan caravan)
+  {
+  }
+
+  int get_caravan_speed(Caravan caravan)
+  {
+    return 0;
+  }
+  void optimize_load(Caravan caravan)
+  {
+
+  }
